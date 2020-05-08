@@ -1,36 +1,44 @@
-# Inshorts-News-API
- 
-Inshorts is an app which provides news from different sources and presents them under 60 words. This API Scraps content from the Inshorts website and provides it in easy to use JSON Format.
+# Inshorts API
 
-Categories
-Supports all categories as on the Inshorts Website. These include -
+Inshorts is an app which provides news from different sources and presents them under 60 words. This API Scraps content from the Inshorts website and provides it in easy to use JSON Format. 
 
-'' // blank to get top news from all categories
-national //Indian National News
-business
-sports
-world
-politics
-technology
-startup
-entertainment
-miscellaneous
-hatke // Unconventional
-science
-automobile
-Usage
-1. GET Request
-Make a get request of the form
+## Categories
 
+Supports all categories as on the Inshorts Website. These include - 
+
+1. '' // blank to get top news from all categories
+2. national //Indian National News
+3. business
+4. sports
+5. world
+6. politics
+7. technology
+8. startup
+9. entertainment
+10. miscellaneous
+11. hatke // Unconventional
+12. science
+13. automobile
+
+## Usage
+
+### 1. GET Request
+
+Make a get request of the form 
+```
 http://{site_address}/news?category={category_name}
+```
 Example - http://www.exampleapi.com/news?category=science
 
-2. POST Request
+### 2. POST Request
+
 Make a post request with the category, provided as form data with name 'category' to the same route as above i.e '/news'.
 
-Response Format
-The response JSON Object looks something like this -
+## Response Format
 
+The response JSON Object looks something like this - 
+
+```JSON
 {
     "category": "science",
     "data": [
@@ -57,33 +65,46 @@ The response JSON Object looks something like this -
     ],
     "success": true
 }
+```
+
 Each response object has the following keys -
 
-success - true indicates the api ran successfully. Upon error the success value is false and the object includes an errorMessage key with the error message.
+1. **success** - true indicates the api ran successfully. Upon error the success value is false and the object includes an errorMessage key with the error message.
 
-{
-    "category": "sciencedfg",
-    "data": [],
-    "errorMessage": "Invalid Category",
-    "success": false
-}
-category - the category you requested for.
+    ```JSON
+    {
+        "category": "sciencedfg",
+        "data": [],
+        "errorMessage": "Invalid Category",
+        "success": false
+    }
+    ```
 
-data - An array of objects each containing a news item for the category. Each object contains
+2. **category** - the category you requested for.
 
-title
-content
-author
-imageUrl
-readMoreUrl(link to original news article)
-date and time of publish
-url (link to inshorts page)
-Installation and Setup
-All dependencies are listed in requirements.txt file.
+3. **data** - An array of objects each containing a news item for the category. Each object contains 
+    * title 
+    * content
+    * author 
+    * imageUrl 
+    * readMoreUrl(link to original news article)
+    * date and time of publish
+    * url (link to inshorts page)
 
-To install all dependencies run -
+## Installation and Setup
 
-$ sudo pip freeze -r requirements.txt
-Start the api server
+All dependencies are listed in *requirements.txt* file. 
 
-$ python app.py
+1. To install all dependencies run - 
+
+    ```bash
+    $ sudo pip freeze -r requirements.txt
+    ```
+
+2. Start the api server
+
+    ```bash 
+    $ python app.py
+    ```
+
+
