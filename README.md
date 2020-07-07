@@ -28,7 +28,6 @@ Make a get request of the form
 ```
 http://{site_address}/news?category={category_name}
 ```
-Example - http://www.exampleapi.com/news?category=science
 
 ### 2. POST Request
 
