@@ -19,5 +19,7 @@ def news():
     elif request.method == 'GET':
         return jsonify(getNews(request.args.get('category')))
 
-app.run(debug=True)
+if __name__ == '__main__':
+    # Threaded option to enable multiple instances for multiple user access support
+    app.run(port = int(os.environ.get('PORT', 5000)),threaded=True)
         
