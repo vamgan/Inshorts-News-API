@@ -6,7 +6,7 @@ flask>=1.0.0
 idna==2.6
 itsdangerous==0.24
 Jinja2>=2.10.1
-lxml==4.1.1
+lxml==4.6.3
 requests>=2.20.0
 urllib3>=1.23
 werkzeug>=0.15.3
