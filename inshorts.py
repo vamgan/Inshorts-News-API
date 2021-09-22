@@ -1,10 +1,5 @@
 # pylint: disable=C0103, C0111, R0914
 
-'''
-Make the request to the inshorts url according to category with requests module.
-Parse using beautiful soup and lxml to form the newsDictionary.
-'''
-
 import requests
 from bs4 import BeautifulSoup
 
@@ -59,7 +54,7 @@ def getNews(category):
             author = None
 
         try:
-            date = card.find(clas='date').text
+            date = card.find(class_='date').text
         except AttributeError:
             date = None
 
