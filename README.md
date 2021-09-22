@@ -39,27 +39,37 @@ The response JSON Object looks something like this -
 
 ```JSON
 {
-    "category": "science",
-    "data": [
+    "category":"",
+    "data":[
         {
-            "author": "Gaurav Shroff",
-            "content": "NASA-backed Starlight program has selected tardigrades and a roundworm species as Earth's first interstellar voyagers who would exit the solar system on a laser-powered spacecraft. Tardigrades, also called water bears, are regarded as the most resilient life forms on Earth. The eight-legged micro-animal can survive for 30 years without food or water and endure temperatures from -270ºC to 150ºC.",
-            "date": "04 Nov 2017,Saturday",
-            "imageUrl": "http://images.newsinshorts.com.edgesuite.net/app_assets/images/2017/4nov/inshorts_image_1509767709444_984.jpg?resize=400px:*",
-            "readMoreUrl": "http://www.deepspace.ucsb.edu/projects/ets?utm_source=inshorts&utm_medium=referral&utm_campaign=fullarticle ",
-            "time": "12:38 pm",
-            "title": "\nTardigrades selected among 1st species to leave solar system\n",
-            "url": "https://www.inshorts.com/en/news/tardigrades-selected-among-1st-species-to-leave-solar-system-1509779328721"
+            "author":"Roshan Gupta",
+            "content":"Over the past 18 months, professionals worldwide achieved phenomenal salary hikes, promotions & career changes with Simplilearn, the online learning platform revealed. It offers Bootcamp programs in partnership with top universities and firms and has helped millions of learners upskill in Data & AI, Full Stack Development, Digital Marketing, MBA, other digital economy job areas, Simplilearn added.",
+            "date":"22 Sep",
+            "imageUrl":"https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2021/09_sep/21_tue/img_1632243978497_14.jpg?",
+            "readMoreUrl":"https://inshorts.com/safe_redirect?url=https%3A%2F%2Fwww.simplilearn.com%2F%3Futm_source%3DInShorts%26utm_medium%3Db2c-leadgen%26utm_campaign%3DInShorts-SLBrandMotivator&inshorts_open_externally=true ",
+            "time":"09:00 am",
+            "title":"\nNow achieve your biggest career goals: Simplilearn\n",
+            "url":"https://www.inshorts.com/en/news/now-achieve-your-biggest-career-goals-simplilearn-1632281403710"
         },
         {
-            "author": "Gaurav Shroff",
-            "content": "India, with the launch of ₹450-crore Mangalyaan mission on November 5, 2013, became the only country to reach the Martian orbit on its maiden voyage. Mangalyaan, also Asia's first successful Mars mission, recently completed three years in orbit despite being designed to last just six months. Notably, only 21 of the 51 previous attempts to reach Mars were successful.",
-            "date": "05 Nov 2017,Sunday",
-            "imageUrl": "http://images.newsinshorts.com.edgesuite.net/app_assets/images/2017/5nov/inshorts_image_1509863191507_302.jpg?resize=400px:*",
-            "readMoreUrl": "https://www.theverge.com/2014/9/24/6837745/india-spacecraft-reaches-mars-orbit-less-than-gravity?utm_source=inshorts&utm_medium=referral&utm_campaign=fullarticle ",
-            "time": "12:49 pm",
-            "title": "\nIndia's Mangalyaan only mission to reach Mars in 1st attempt\n",
-            "url": "https://www.inshorts.com/en/news/indias-mangalyaan-only-mission-to-reach-mars-in-1st-attempt-1509866348359"
+            "author":"Anmol Sharma",
+            "content":"Ex-India captain Sunil Gavaskar criticised Punjab Kings for not playing Chris Gayle against Rajasthan Royals on the occasion of the West Indian's 42nd birthday. \"He has dominated every single T20 league and you drop him for this game on his birthday makes zero sense,\" Gavaskar said. Meanwhile, Kevin Pietersen said, \"I can't understand PBKS' thinking at all.\"",
+            "date":"22 Sep",
+            "imageUrl":"https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2021/09_sep/22_wed/img_1632280365719_940.jpg?",
+            "readMoreUrl":"https://www.hindustantimes.com/cricket/makes-0-sense-questions-will-be-asked-pietersen-gavaskar-astonished-as-punjab-kings-omit-gayle-on-42nd-birthday-101632232586594-amp.html?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+            "time":"08:54 am",
+            "title":"\nPunjab Kings dropping Gayle on his birthday makes zero sense: Sunil Gavaskar\n",
+            "url":"https://www.inshorts.com/en/news/punjab-kings-dropping-gayle-on-his-birthday-makes-zero-sense-sunil-gavaskar-1632281041444"
+        },
+        {
+            "author":"Anmol Sharma",
+            "content":"RR's 20-year-old pacer Kartik Tyagi took two wickets and defended four runs off the last over to help his team defeat PBKS by 2 runs in their IPL 2021 encounter. With the victory, RR moved to fifth position on the points table with eight points in eight matches. RR put up a total of 185/10 before restricting PBKS to 183/4.",
+            "date":"21 Sep",
+            "imageUrl":"https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2021/09_sep/21_tue/img_1632247979154_374.jpg?",
+            "readMoreUrl":"https://www.iplt20.com/match/2021/32?tab=scorecard&utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts ",
+            "time":"11:53 pm",
+            "title":"\n20-year-old Kartik Tyagi defends 4 runs off last over as RR defeat PBKS by 2 runs\n",
+            "url":"https://www.inshorts.com/en/news/20yearold-kartik-tyagi-defends-4-runs-off-last-over-as-rr-defeat-pbks-by-2-runs-1632248634570"
         },
     ],
     "success": true
@@ -90,20 +100,5 @@ Each response object has the following keys -
     * date and time of publish
     * url (link to inshorts page)
 
-## Installation and Setup
-
-All dependencies are listed in *requirements.txt* file. 
-
-1. To install all dependencies run - 
-
-    ```bash
-    $ sudo pip freeze -r requirements.txt
-    ```
-
-2. Start the api server
-
-    ```bash 
-    $ python app.py
-    ```
 
 
