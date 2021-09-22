@@ -5,11 +5,15 @@ Main server file returning the news dictionary from inshorts file as JSON Object
 '''
 
 from flask import Flask, request, jsonify
+from flask.templating import render_template
 from inshorts import getNews
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
+@app.route('/')
+def home():
+    return render_template('index.html')
 
 @app.route('/news', methods=['GET', 'POST'])
 
