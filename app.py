@@ -31,5 +31,5 @@ def news():
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
-    #app.run(port = int(os.environ.get('PORT', 5000)),threaded=True)
-     app.run()   
+    app.run(port = int(os.environ.get('PORT', 5000)),threaded=True)
+
